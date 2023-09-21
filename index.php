@@ -22,12 +22,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://localhost/CampoVirtud/assets/css/style.css">
     <link rel="stylesheet" href="http://localhost/CampoVirtud/assets/css/normalize.css">
+    
+    <link rel="stylesheet" href="/CampoVirtud/assets/css/style.css?v=<%=DateTime.Now%>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Campo Virtud</title>
+    <style>
+        @media (min-width: 900px) {
+            .header-nav .flex .navegacion .menu{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -49,33 +57,33 @@
                 <label for="click" class="menu-btn">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </label>
-                <ul>
-                    <li><a href="index.php" class="navegacion__enlace">Agricultura</a>
-                       <ul class="submenu">
+                <ul class = "menu">
+                    <li class = "menu-item"><a href="index.php" class="navegacion__enlace">Agricultura</a>
+                       <ul class="submenu" style="background-color: white;">
                             <li><a href="">Biopreparados</a></li>
                             <li><a href="">mapa de suelo gustado</a></li>
                             <li><a href="">Compesteje</a></li>
                             <li><a href="">Cultivos</a></li>
                         </ul>
                     </li>
-                    <li><a href="" class="navegacion__enlace">salud</a>
-                        <!--<ul  class="submenu">
+                    <li class = "menu-item"><a href="" class="navegacion__enlace">salud</a>
+                        <ul  class="submenu" style="background-color: white;">
                             <li><a href="">Terapias Naturales</a></li>
                             <li><a href="">Bienestar Emocional</a></li>
                             <li><a href="">Medicina Productiva</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
-                    <li><a href="cursos.php" class="navegacion__enlace">Talleres</a>
-                    <!--<ul class="submenu" >
+                    <li class = "menu-item"><a href="cursos.php" class="navegacion__enlace">Talleres</a>
+                        <ul class="submenu" style="background-color: white;">
                             <li><a href="">Videos</a></li>
                             <li><a href="">Otros</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
-                    <li><a href="" class="navegacion__enlace">Actualidad</a></li>
-                    <li><a href="registro.php" class="navegacion__enlace">Blog</a>
-                    <!--<ul class="submenu">
+                    <li class = "menu-item"><a href="" class="navegacion__enlace">Actualidad</a></li>
+                    <li class = "menu-item"><a href="registro.php" class="navegacion__enlace">Blog</a>
+                        <ul class="submenu" style="background-color: white;">
                             <li><a href="">La Voz del Campo</a></li>
-                        </ul>-->
+                        </ul>
                     </li>
                 </ul>
             </nav>

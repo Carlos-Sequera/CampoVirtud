@@ -152,6 +152,7 @@ nav .navegacion{
     display: flex;
     text-decoration: none;
     list-style: none;
+    background-color: red;
 }
 
 .navegacion ul li a{
@@ -382,6 +383,7 @@ nav .navegacion{
 #click{
     display: none;
 }
+
 @media(max-width: 900px) {
   .footerNav ul{
     flex-direction: column;

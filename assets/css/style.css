@@ -43,10 +43,12 @@ html{
 section{
     padding: 3rem 2rem;
 }
+
 body{
     font-family: var(--fuenteParrafo);
     font-size: 1.6rem;
     line-height: 2;
+
 }
 
 .header-nav{
@@ -208,11 +210,16 @@ a{
 }
 
 .navegacion ul li a:hover::after{
+    content: "";
+    width: 10px;
+    height: 10px;
     transform-origin: left;
     transform: scaleX(1);
 }
 
 .navegacion ul{
+    display: flex;
+    text-decoration: none;
     list-style: none;
 }
 .navegacion ul li{
@@ -233,9 +240,22 @@ a{
 .navegacion ul li .submenu{
     position: absolute;
     left: 0;
+    top:-400px;
     width: 200px;
-    background: #ffffff;
-    display: none;
+    display: flex;
+    transform: scale(0);
+    flex-direction: column;
+    transition: all 500ms ease-in-out;
+}
+
+.navegacion .menu .menu-item:hover .submenu{
+    background-color: var(--blanco);
+}
+
+.menu .menu-item:hover ul {
+    display: flex;
+    transform: scale(1);
+    top: 100px;
 }
 
 .navegacion ul li .submenu li{
