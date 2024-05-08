@@ -1,4 +1,4 @@
-:root{
+/*:root{
     --blanco: #FFF;
     --negro: #000;
     --verde: green;
@@ -90,37 +90,6 @@ h3{
 h4{
     font-size: 1rem;
 }
-
-.header{
-    min-height: 90vh;
-    background: url(../images/img.jpg) no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center right;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.header__texto {
-    text-align: center;
-    color: var(--blanco);
-    margin-top: 5rem;
-    font-size: 2rem;
-}
-
-.no-margin{
-    margin: 0;
-}
-
-.contenedor{
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-}
 a{
     text-decoration: none;
 }
@@ -143,7 +112,7 @@ a{
 }
 
 .header-nav .flex .logo img{
-    width: 85%;
+    width: 100%;
 }
 
 .hamburger{
@@ -167,7 +136,7 @@ a{
 }
 .header-nav .flex .user-profile{
     position: absolute;
-    top: 120%;
+    top: 100%;
     right: 2rem;
     width: 30rem;
     border-radius: .5rem;
@@ -535,8 +504,8 @@ a{
 
   @media only screen and (max-width: 900px) {
     .logo img{
-        width: 50%;
-        height: 50%;
+        width: 30%;
+        height: 30%;
     }
     .navegacion .menu-btn i {
         display: block;

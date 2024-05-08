@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     if(mysqli_num_rows($select) > 0){
         $row = mysqli_fetch_assoc($select);
         $_SESSION['user_id'] = $row['id'];
-        header('location:index.php');
+        header('location:login.php');
     }else{
         $message[] = 'Incorrecto el usuario o la contraseña!!!';
     }
@@ -47,8 +47,11 @@ if(isset($_POST['submit'])){
     <div class="header-nav">
         <div class="logo">
             <a href="index.php">
-                <img src="images/logo.jpg" alt="el campo">
+                <img src="images/logo.jpg" alt="el campo" style="width:40%;">
             </a>
+        </div>
+        <div class="icons" style="font-size: 2em;">
+                <div id="user-btn" class="fa-solid fa-user"></div>
         </div>
     <!--    <nav class="navegacion">
             <input type="checkbox" name="" id="click">
